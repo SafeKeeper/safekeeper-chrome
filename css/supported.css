@@ -1,0 +1,141 @@
+body {
+    background-color: #dfe5de;
+    margin: 0;
+    margin-top: -26px;
+    padding: 0;
+}
+
+div {
+    display: block;
+}
+
+p{
+    vertical-align: middle;
+    text-align: center;
+    font-size:2em;
+}
+
+#header {
+    font-size:1em;
+    width: 200px;
+    height: 75px;
+    margin-top: 25px;
+    background: #cbd1ca;
+    color: black;
+    padding: 0px 0px 10px;
+}
+
+#SafeKeeperLogo {
+    margin-top: -40px;
+    margin-left: 5px;
+    display: block;
+}
+
+#content-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 100%;
+    color: black;
+    text-align: center;
+    font-size:1.3em;
+    background: #dfe5de;
+
+}
+
+#content-text-option {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 100%;
+    color: black;
+    background: #dfe5de;
+    text-align: center;
+    text-justify: inter-word;
+
+}
+
+#content-icon {
+    margin-left: 60px;
+    margin-top: 20px;
+
+}
+
+#footer {
+    width: 200px;
+    height: 20px;
+    background: #cbd1ca;
+}
+
+#divider {
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    vertical-align: middle;
+    line-height: 40px;
+    background: #cbd1ca;
+    text-align: center;
+    font-size:1.5em;
+}
+
+#ProtectedMode{
+    font-size:1.5em;
+}
+
+.switch{
+    margin-left: 70px;
+    margin-bottom: 10px;
+}
+
+.cmn-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.cmn-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+
+input.cmn-toggle-round-flat + label {
+  padding: 2px;
+  width: 60px;
+  height: 20px;
+  background-color: #dddddd;
+  border-radius: 50px;
+  transition: background 0.4s;
+}
+input.cmn-toggle-round-flat + label:before,
+input.cmn-toggle-round-flat + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+input.cmn-toggle-round-flat + label:before {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  background-color: #fff;
+  border-radius: 30px;
+  transition: background 0.4s;
+}
+input.cmn-toggle-round-flat + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 32px;
+  background-color: #dddddd;
+  border-radius: 52px;
+  transition: margin 0.4s, background 0.4s;
+}
+input.cmn-toggle-round-flat:checked + label {
+  background-color: #34db48;
+}
+input.cmn-toggle-round-flat:checked + label:after {
+  margin-left: 25px;
+  background-color: #34db48;
+}

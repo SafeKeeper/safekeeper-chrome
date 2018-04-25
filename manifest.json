@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+
+  "name": "SafeKeeper",
+  "description": "This extension will obtain an SGX quote from a remote SGX enclave, if the site supports it, and highlight the fields that are going be sent over an encrypted channel to the enclave, so that the server does not see them in clear.",
+  "version": "0.8.2",
+  "browser_action": {
+    "default_icon": "images/cross_small.png",
+    "default_popup": "html/not_supported.html"
+  },
+   
+  "background": {
+    "scripts": ["deps/jquery/jquery.min.js", "deps/kjur/jsrsasign-all-min.js",
+                "deps/jsbn/jsbn-min.js", "js/background.js"]
+  },
+
+  "content_scripts": [ {
+    "matches": [
+      "<all_urls>"
+    ],
+    "css": ["deps/jquery/jquery-ui.min.css"],
+    "js": ["deps/jquery/jquery.min.js", "deps/jquery/jquery-ui.min.js",
+           "deps/aesjs/index.js", "deps/sjcl/sjcl.js", "js/content.js"],
+    "run_at": "document_start"
+  } ],
+
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "storage",
+    "webRequest",
+    "webNavigation",
+    "webRequestBlocking",
+    "http://*/*",
+    "https://*/*",
+    "file://*/*"
+  ]
+}
